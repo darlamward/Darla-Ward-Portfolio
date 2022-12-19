@@ -1,0 +1,529 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+section {
+  padding: 100px;
+}
+
+body {
+  font-family: "Urbanist", sans-serif;
+}
+
+/*********************
+      BANNER ELEMENTS
+  **********************/
+
+.banner {
+  position: relative;
+  min-height: 100vh;
+  background: url(./images/background.jpg); /* Photo by Marina Vitale */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner h2 {
+  font-size: 3em;
+  color: white;
+  font-weight: 500;
+  line-height: 1.2em;
+}
+
+.banner h2 span {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.banner h3 {
+  font-size: 1.5em;
+  color: white;
+  font-weight: 500;
+}
+/*********************
+      BUTTON ELEMENTS
+  **********************/
+
+.btn {
+  position: relative;
+  background: #2196f3;
+  display: inline-block;
+  color: white;
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+/*********************
+      HEADER ELEMENTS
+  **********************/
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.5s;
+}
+header.sticky {
+  background: white;
+  padding: 20px 100px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+header .logo {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+header.sticky .logo {
+  color: black;
+}
+header ul {
+  position: relative;
+  display: flex;
+}
+header ul li {
+  position: relative;
+  list-style: none;
+}
+
+header ul li a {
+  position: relative;
+  display: inline-block;
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+}
+header ul li a:hover {
+  color: #2196f3;
+}
+
+header.sticky ul li a {
+  color: black;
+}
+header.sticky ul li a:hover {
+  color: #2196f3;
+}
+/*********************
+      ABOUT ELEMENTS
+  **********************/
+.about-heading {
+  widows: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  color: black;
+}
+.about-heading h2 {
+  font-weight: 600;
+  font-size: 30px;
+}
+.about-content {
+  display: flex;
+  justify-content: space-between;
+}
+.about-content-box h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+/*********************
+      SERVICES ELEMENTS
+  **********************/
+.services-heading {
+  widows: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+}
+.services-heading h2 {
+  font-weight: 600;
+  font-size: 30px;
+}
+.services-heading p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.services-content {
+  display: flex;
+  justify-content: center;
+  color: white;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.services {
+  background: url(./images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.services .services-content-box {
+  padding: 40px 20px;
+  background: #bfc2d3;
+  color: white;
+  max-width: 340px;
+  margin: 20px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  opacity: 0.9;
+}
+/*********************
+      WORK ELEMENTS
+  **********************/
+.work-heading {
+  widows: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  color: black;
+}
+.work-heading h2 {
+  font-weight: 600;
+  font-size: 30px;
+}
+.work-heading p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.work-content {
+  display: flex;
+  justify-content: center;
+  color: white;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.work-content-box a:link,
+a:visited {
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+}
+.work .work-content-box {
+  padding: 40px 20px;
+  background: #222222;
+  color: white;
+  max-width: 340px;
+  margin: 20px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  height: 200px;
+  width: 350px;
+}
+
+.workbox {
+  text-decoration: none;
+}
+
+#work1:hover {
+  color: transparent;
+  background: url("./images/ChickenCoopRestaurantPage.png") no-repeat;
+  background-size: 340px 200px;
+}
+
+#work2:hover {
+  color: transparent;
+  background: url("./images/DogPhotoGenerator.png") no-repeat;
+  background-size: 340px 200px;
+}
+
+#work3:hover {
+  color: transparent;
+  background: url("./images/RoboMaster.png") no-repeat;
+  background-size: 340px 200px;
+}
+
+#work4:hover {
+  color: transparent;
+  background: url("./images/HedgehogInfoPage.png") no-repeat;
+  background-size: 340px 200px;
+}
+
+#work5:hover {
+  color: transparent;
+  background: url("./images/TravelClaimsProcessingSystem.png") no-repeat;
+  background-size: 340px 200px;
+}
+
+#work6:hover {
+  color: transparent;
+  background: url("./images/CarInsurance.png") no-repeat;
+  background-size: 340px 200px;
+}
+
+/*************************
+      TESTIMONALS ELEMENTS
+  *************************/
+.test-header {
+  widows: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+}
+.test-header h2 {
+  font-weight: 600;
+  font-size: 30px;
+}
+.test-header p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.test-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.test {
+  background: url(./images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.test .test-content-box {
+  padding: 40px 20px;
+  background: #ebd579;
+  color: white;
+  max-width: 340px;
+  margin: 20px;
+  text-align: center;
+  opacity: 0.9;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  font-style: italic;
+}
+.test-content-box .icon {
+  color: white;
+  display: flex;
+  justify-content: left;
+  font-size: 24px;
+}
+/*********************
+      CONTACT ELEMENTS
+  **********************/
+.contact-heading {
+  widows: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  color: black;
+}
+.contact-heading h2 {
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+}
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
+.contact-content-box5 h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: black;
+}
+.contact {
+  background: #111111;
+}
+.form-box {
+  min-width: 60%;
+}
+.form-box form {
+  display: flex;
+  flex-direction: column;
+}
+.form-box form h3,
+.contact-info h3 {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.form-box form input,
+.form-box form textarea {
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background: #222222;
+  color: white;
+  resize: none;
+}
+.form-box form textarea {
+  min-height: 200px;
+}
+
+.form-box .submit {
+  position: relative;
+  background: #2196f3;
+  display: inline-block;
+  color: white;
+  padding: 10px 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.contact-info {
+  min-width: 40%;
+}
+.contact-info-box {
+  position: relative;
+}
+
+.contact-info-box .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.contact-info-box .box .icon {
+  min-width: 40px;
+  padding-top: 4px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 24px;
+}
+.contact-info-box .box .text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: white;
+  flex-direction: column;
+  font-weight: 300;
+}
+.contact-info-box .box .text h3 {
+  font-weight: 500;
+  color: #2196f3;
+  margin-bottom: 0;
+}
+
+.button-77 {
+  align-items: center;
+  appearance: none;
+  background-clip: padding-box;
+  background-color: initial;
+  background-image: none;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-size: 16px;
+  font-weight: 800;
+  justify-content: center;
+  line-height: 24px;
+  margin: 0;
+  min-height: 64px;
+  outline: none;
+  overflow: visible;
+  padding: 19px 26px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: auto;
+  word-break: keep-all;
+  z-index: 0;
+  font-family: "Urbanist", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .button-77 {
+    padding: 19px 32px;
+  }
+}
+
+.button-77:before,
+.button-77:after {
+  border-radius: 80px;
+}
+
+.button-77:before {
+  background-color: #bfc2d3;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -2;
+}
+
+.button-77:after {
+  text-decoration: none;
+  background-color: initial;
+  background-image: linear-gradient(180deg, #bfc2d3 0, #ebd579 100%);
+  bottom: 4px;
+  content: "";
+  display: block;
+  left: 4px;
+  overflow: hidden;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  transition: all 100ms ease-out;
+  z-index: -1;
+}
+
+.button-77:hover:not(:disabled):after {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition-timing-function: ease-in;
+}
+
+.button-77:active:not(:disabled) {
+  color: #ccc;
+}
+
+.button-77:active:not(:disabled):after {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    linear-gradient(92.83deg, #bfc2d3 0, #ebd579 100%);
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  top: 4px;
+}
+
+.button-77:disabled {
+  cursor: default;
+  opacity: 0.24;
+}
